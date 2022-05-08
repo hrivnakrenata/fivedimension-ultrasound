@@ -1,0 +1,15 @@
+<span class="loading-indicator" *ngIf="loading">
+  <mat-spinner></mat-spinner>
+</span>
+
+<div class="main_component">
+  <h1>Foglaljon időpontot!</h1>
+  <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
+    <mat-form-field><mat-label for="email">Email: </mat-label><input matInput id="email" type="text" formControlName="email" /> </mat-form-field>
+    <mat-form-field><mat-label for="password">Dátum és idő: </mat-label><input matInput id="password" type="datetime-local" formControlName="date" /> </mat-form-field>
+    <span>
+    <span><button mat-raised-button type="submit">Foglalás</button></span>
+    <span><button mat-raised-button type="button" [routerLink]="'/main'">Vissza</button></span>
+  </span>
+  </form>
+</div>

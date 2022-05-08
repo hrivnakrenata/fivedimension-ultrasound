@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fivedimension-ultrasound": {
+      "hosting": {
+        "week-04": [
+          "fivedimension-ultrasound"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fivedimension-ultrasound"
+  }
+}

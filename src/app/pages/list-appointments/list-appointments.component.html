@@ -1,0 +1,7 @@
+<div class="main_component">
+  <app-appointment *ngFor="let appointment of appointments"
+                   [appointment]="appointment"
+                   (onDeleteAppointment)="deleteAppointment(appointment)"
+                   (onUpdateAppointment)="updateAppointment(appointment)"
+  ></app-appointment>
+</div>
